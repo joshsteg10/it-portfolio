@@ -4,7 +4,7 @@ IT professional with hands-on experience supporting end users, resolving hardwar
 
 To deepen technical expertise and demonstrate initiative, a fully scripted enterprise Active Directory environment was built from the ground up on Proxmox VE, covering identity management, role-based access control, tiered NTFS permissions, and SMB file share security across 115+ user accounts and two simulated branch offices. Every component was automated via PowerShell with no manual steps.
 
-Holds the Google IT Support Professional Certificate and OSHA 10 certification. Committed to continuous learning and building the practical skills that translate directly to IT support and systems administration roles.
+Holds the Google IT Support Professional Certificate. Committed to continuous learning and building the practical skills that translate directly to IT support and systems administration roles.
 
 ---
 
@@ -13,7 +13,6 @@ Holds the Google IT Support Professional Certificate and OSHA 10 certification. 
 | Certification | Issuer | Status |
 |---|---|---|
 | Google IT Support Professional Certificate | Google / Coursera | Completed |
-| OSHA 10 | OSHA | Completed |
 
 ---
 
@@ -77,6 +76,5 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 
 ## Contact
 
-- **GitHub:** github.com/joshsteg10
 - **LinkedIn:** linkedin.com/in/joshsteg10
 - **Email:** joshsteg10@gmail.com
