@@ -1,6 +1,10 @@
 # IT Support Portfolio
 
-IT professional with hands-on experience resolving end-user issues across workstations, networking, printers, and AV systems in high-pressure live event environments. Complemented by a self-built enterprise homelab running Active Directory, role-based access control, and tiered file share permissions across 115+ user accounts — provisioned end-to-end via PowerShell.
+IT professional with hands-on experience supporting end users, resolving hardware and software issues, and maintaining technology systems in fast-paced, high-stakes environments. Background in on-site technical support across hotel and conference center operations, where reliable, rapid problem resolution was non-negotiable.
+
+To deepen technical expertise and demonstrate initiative, a fully scripted enterprise Active Directory environment was built from the ground up on Proxmox VE, covering identity management, role-based access control, tiered NTFS permissions, and SMB file share security across 115+ user accounts and two simulated branch offices. Every component was automated via PowerShell with no manual steps.
+
+Holds the Google IT Support Professional Certificate and OSHA 10 certification. Committed to continuous learning and building the practical skills that translate directly to IT support and systems administration roles.
 
 ---
 
@@ -9,6 +13,7 @@ IT professional with hands-on experience resolving end-user issues across workst
 | Certification | Issuer | Status |
 |---|---|---|
 | Google IT Support Professional Certificate | Google / Coursera | Completed |
+| OSHA 10 | OSHA | Completed |
 
 ---
 
@@ -72,6 +77,6 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 
 ## Contact
 
-- **GitHub:** github.com/yourusername
-- **LinkedIn:** linkedin.com/in/yourprofile
-- **Email:** youremail@email.com
+- **GitHub:** github.com/joshsteg10
+- **LinkedIn:** linkedin.com/in/joshsteg10
+- **Email:** joshsteg10@gmail.com
