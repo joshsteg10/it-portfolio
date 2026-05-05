@@ -1,99 +1,84 @@
-# IT Homelab Portfolio
+# IT Support Portfolio
 
-## 🧭 Overview
+**Aspiring IT Support Technician** with hands-on experience supporting live event technology across hotel and conference environments, and a homelab built to enterprise standards from the ground up.
 
-This repository documents a hands-on IT homelab built to develop and demonstrate practical system administration and IT support skills.
-
-The environment simulates a basic enterprise network using virtualization, with a primary focus on Active Directory, identity management, and access control.
-
-All configurations and testing are performed in a controlled lab environment using Proxmox.
+I troubleshot real problems under pressure - AV systems going down mid-conference, printers dying in a hotel business center, network issues with no safety net and a room full of people waiting. Now I'm channeling that same instinct into system administration and IT support through self-directed lab work and formal certification.
 
 ---
 
-## 🖥️ Lab Environment
+## Certifications
 
-**Hypervisor:**
-
-* Proxmox Virtual Environment (Proxmox VE)
-
-**Virtual Machines:**
-
-* Windows Server (Domain Controller)
-* Windows 10 Client (Domain-joined workstation)
-
-**Core Services Configured:**
-
-* Active Directory Domain Services (AD DS)
-* DNS (name resolution within the domain)
-* File sharing with NTFS-based access control
+| Certification | Issuer | Status |
+|---|---|---|
+| Google IT Support Professional Certificate | Google / Coursera | Completed |
+| CompTIA A+ | CompTIA | In progress |
 
 ---
 
-## 📂 Active Directory Implementation
+## Technical Skills
 
-A structured Active Directory environment was deployed to model real-world user and access management.
-
-### Directory Structure
-
-* Organizational Units (OUs) created to represent logical separation (e.g., branches and departments)
-* User accounts organized based on role and location
-
-### Group Design
-
-* **Global Groups** used to organize users by role/department
-* **Domain Local Groups** used to assign permissions to resources
-
-Group nesting follows the **AGDLP model**:
-
-> Accounts → Global Groups → Domain Local Groups → Permissions
+| Category | Skills |
+|---|---|
+| Operating Systems | Windows 10/11, Windows Server |
+| Active Directory | Users, groups, OUs, RBAC, group policy |
+| Networking | DNS, DHCP, TCP/IP, troubleshooting connectivity |
+| File Systems | NTFS permissions, SMB shares, access control |
+| Hardware | AV systems, printers, signage displays, end-user devices |
+| Scripting | PowerShell (automation, bulk provisioning) |
+| Virtualization | Proxmox VE |
+| Ticketing | Helpdesk workflows, user provisioning, account management |
 
 ---
 
-## 🔐 Access Control Configuration
+## Projects
 
-* Created departmental shared folders
-* Applied NTFS permissions using Domain Local Groups
-* Nested Global Groups into Domain Local Groups to enforce role-based access control
-* Restricted access based on user role and group membership
+### Active Directory Lab | Proxmox Homelab
 
----
+A fully scripted enterprise Active Directory environment built from scratch on Proxmox VE, simulating the identity infrastructure of a mid-size corporation across two branch offices.
 
-## 🧪 Validation & Testing
+- 115+ user accounts with full organizational profiles (title, department, manager, UPN)
+- 50 security groups across 5 departments following `BRANCH-DEPARTMENT-ROLE` naming convention
+- Tiered NTFS permissions: Full Control for managers, Modify for senior staff, Read and Execute for junior staff
+- Restricted subfolders with inheritance disabled, scoped to specific groups only
+- 10 SMB shares with Access-Based Enumeration - users see only the shares they have access to
+- Entire environment provisioned end-to-end with a single PowerShell script
 
-* Successfully joined client machine to the domain
-* Verified domain authentication for multiple user accounts
-* Tested access control by logging in as different users and validating permissions
-* Confirmed proper DNS resolution within the domain environment
-
----
-
-## 🧠 Technical Skills Demonstrated
-
-* Active Directory administration (users, groups, OUs)
-* Role-based access control (RBAC)
-* NTFS permissions and shared resource management
-* Domain authentication and client-server interaction
-* Basic networking (DNS, connectivity validation)
-* Virtualization and lab deployment using Proxmox
+**[View project documentation](./active-directory-lab/README.md)**
 
 ---
 
-## 🚧 In Progress
+## Experience
 
-The lab environment is being expanded to include:
+**Event Services Technician**
+Pinnacle Live
 
-* Ticketing system simulation (helpdesk workflow)
-* Windows troubleshooting scenarios
-* Group Policy (GPO) configuration and enforcement
+Delivered on-site technical support across hotel and conference center environments, serving as the primary technology resource for clients, venue management, and operational staff. Supported high-profile corporate events where system reliability and rapid issue resolution were critical.
+
+- Provided end-user support for hotel business center operations, including workstation troubleshooting, printer diagnostics and repair, and network connectivity issues
+- Troubleshot network and connectivity problems affecting event infrastructure, digital signage systems, and client-facing technology
+- Diagnosed and resolved AV system failures in live conference environments with minimal downtime, often under significant time pressure with clients and audiences present
+- Managed full lifecycle of AV and signage systems across multiple concurrent events including configuration, deployment, and post-event teardown
+- Attended and contributed to BEO (Banquet Event Order) meetings with hotel management to plan and coordinate technical requirements ahead of events, ensuring all AV, networking, and signage needs were scoped and fulfilled
+- Led technical crews during event execution, delegating responsibilities, managing setup timelines, and ensuring all systems were operational before client go-live
 
 ---
 
-## 🎯 Objective
+## What I'm Building Toward
 
-To build job-ready IT support and system administration skills by implementing and testing real-world scenarios in a controlled lab environment.
+The homelab is actively expanding. Next additions:
+
+- Group Policy Objects (GPOs) for password policy, drive mapping, and desktop restrictions
+- Helpdesk simulation scenarios: password resets, account lockouts, permission errors
+- Troubleshooting documentation modeled on real-world ticket workflows
+- Read-only Domain Controller on Branch2 to simulate a remote site topology
+- SIEM integration to practice log review and event monitoring
 
 ---
 
-## 📌 Notes
+## Contact
 
-This portfolio reflects practical, hands-on work and will continue to evolve with additional infrastructure, troubleshooting cases, and system configurations.
+Open to help desk and IT support roles. Feel free to reach out.
+
+- **GitHub:** github.com/yourusername
+- **LinkedIn:** linkedin.com/in/yourprofile
+- **Email:** youremail@email.com
