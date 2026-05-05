@@ -60,7 +60,7 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 - 10 SMB shares with Access-Based Enumeration - users see only the shares they have access to
 - Entire environment provisioned end-to-end with a single PowerShell script
 
-**[View project documentation](./active-directory-lab/README.md)**
+**[View project documentation](./Active-Directory-Lab/README.md)**
 
 ---
 
