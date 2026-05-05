@@ -76,5 +76,5 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 
 ## Contact
 
-- **LinkedIn:** linkedin.com/in/joshsteg10
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/joshsteg10)
 - **Email:** joshsteg10@gmail.com
