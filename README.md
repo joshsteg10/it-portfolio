@@ -1,8 +1,6 @@
 # IT Support Portfolio
 
-**Aspiring IT Support Technician** with hands-on experience supporting live event technology across hotel and conference environments, and a homelab built to enterprise standards from the ground up.
-
-I troubleshot real problems under pressure - AV systems going down mid-conference, printers dying in a hotel business center, network issues with no safety net and a room full of people waiting. Now I'm channeling that same instinct into system administration and IT support through self-directed lab work and formal certification.
+IT professional with hands-on experience resolving end-user issues across workstations, networking, printers, and AV systems in high-pressure live event environments. Complemented by a self-built enterprise homelab running Active Directory, role-based access control, and tiered file share permissions across 115+ user accounts — provisioned end-to-end via PowerShell.
 
 ---
 
@@ -11,7 +9,6 @@ I troubleshot real problems under pressure - AV systems going down mid-conferenc
 | Certification | Issuer | Status |
 |---|---|---|
 | Google IT Support Professional Certificate | Google / Coursera | Completed |
-| CompTIA A+ | CompTIA | In progress |
 
 ---
 
@@ -21,12 +18,28 @@ I troubleshot real problems under pressure - AV systems going down mid-conferenc
 |---|---|
 | Operating Systems | Windows 10/11, Windows Server |
 | Active Directory | Users, groups, OUs, RBAC, group policy |
-| Networking | DNS, DHCP, TCP/IP, troubleshooting connectivity |
+| Networking | DNS, DHCP, TCP/IP, connectivity troubleshooting |
 | File Systems | NTFS permissions, SMB shares, access control |
-| Hardware | AV systems, printers, signage displays, end-user devices |
-| Scripting | PowerShell (automation, bulk provisioning) |
+| Hardware | Workstations, printers, AV systems, signage displays, peripherals |
+| Scripting | PowerShell - automation and bulk provisioning |
 | Virtualization | Proxmox VE |
-| Ticketing | Helpdesk workflows, user provisioning, account management |
+| Support | End-user troubleshooting, user provisioning, account management |
+
+---
+
+## Experience
+
+**Event Services Technician**
+Pinnacle Live
+
+Served as the on-site technical support resource across hotel and conference center environments, resolving end-user issues across workstations, printers, networking, and AV systems. Functioned as the first and only point of contact for technology problems during live events, with no escalation path available.
+
+- Resolved end-user issues across hotel business center workstations, printers, and peripheral devices, diagnosing hardware and software problems and restoring service with minimal disruption
+- Troubleshot network and connectivity problems affecting client-facing technology, digital signage systems, and event infrastructure
+- Diagnosed and resolved AV system failures during live conferences and presentations, identifying root cause and implementing fixes under time-critical conditions
+- Configured, deployed, and managed technology systems across multiple concurrent events, ensuring all equipment was operational before client go-live
+- Attended BEO (Banquet Event Order) meetings with hotel management to scope technical requirements, coordinate logistics, and ensure all technology needs were planned and fulfilled ahead of events
+- Led technical crews during event execution, delegating tasks, managing timelines, and maintaining accountability for all systems throughout the event lifecycle
 
 ---
 
@@ -47,37 +60,17 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 
 ---
 
-## Experience
+## Lab Roadmap
 
-**Event Services Technician**
-Pinnacle Live
-
-Delivered on-site technical support across hotel and conference center environments, serving as the primary technology resource for clients, venue management, and operational staff. Supported high-profile corporate events where system reliability and rapid issue resolution were critical.
-
-- Provided end-user support for hotel business center operations, including workstation troubleshooting, printer diagnostics and repair, and network connectivity issues
-- Troubleshot network and connectivity problems affecting event infrastructure, digital signage systems, and client-facing technology
-- Diagnosed and resolved AV system failures in live conference environments with minimal downtime, often under significant time pressure with clients and audiences present
-- Managed full lifecycle of AV and signage systems across multiple concurrent events including configuration, deployment, and post-event teardown
-- Attended and contributed to BEO (Banquet Event Order) meetings with hotel management to plan and coordinate technical requirements ahead of events, ensuring all AV, networking, and signage needs were scoped and fulfilled
-- Led technical crews during event execution, delegating responsibilities, managing setup timelines, and ensuring all systems were operational before client go-live
-
----
-
-## What I'm Building Toward
-
-The homelab is actively expanding. Next additions:
-
-- Group Policy Objects (GPOs) for password policy, drive mapping, and desktop restrictions
+- Group Policy Objects (GPOs) for password policy enforcement, drive mapping, and desktop restrictions
 - Helpdesk simulation scenarios: password resets, account lockouts, permission errors
 - Troubleshooting documentation modeled on real-world ticket workflows
 - Read-only Domain Controller on Branch2 to simulate a remote site topology
-- SIEM integration to practice log review and event monitoring
+- SIEM integration for log review and event monitoring
 
 ---
 
 ## Contact
-
-Open to help desk and IT support roles. Feel free to reach out.
 
 - **GitHub:** github.com/yourusername
 - **LinkedIn:** linkedin.com/in/yourprofile
