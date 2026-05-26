@@ -13,6 +13,7 @@ Holds the Google IT Support Professional Certificate. Committed to continuous le
 | Certification | Issuer | Status |
 |---|---|---|
 | Google IT Support Professional Certificate | Google / Coursera | Completed |
+| CompTIA A+ | CompTIA | Core 1 Complete |
 
 ---
 
