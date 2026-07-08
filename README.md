@@ -65,11 +65,22 @@ A fully scripted enterprise Active Directory environment built from scratch on P
 
 ---
 
+### Troubleshooting Incidents | osTicket Helpdesk Simulation
+
+A self-hosted IT helpdesk ticketing system deployed on Windows Server 2022, simulating real end-user support tickets from initial complaint through diagnosis and resolution.
+
+- Deployed osTicket on IIS with PHP (FastCGI) and MySQL, configured entirely on a standalone Windows Server 2022 instance
+- Diagnosed and resolved real configuration issues during deployment, including FastCGI module registration, missing PHP extensions, and broken PHP session handling
+- Structured Help Topics and department routing to simulate a small IT support desk
+- Full ticket lifecycle documented for multiple incident categories: triage questions, internal diagnostic notes, and resolution steps
+
+**[View project documentation](./Troubleshooting-Incidents/README.md)**
+
+---
+
 ## Lab Roadmap
 
 - Group Policy Objects (GPOs) for password policy enforcement, drive mapping, and desktop restrictions
-- Helpdesk simulation scenarios: password resets, account lockouts, permission errors
-- Troubleshooting documentation modeled on real-world ticket workflows
 - Read-only Domain Controller on Branch2 to simulate a remote site topology
 - SIEM integration for log review and event monitoring
 
