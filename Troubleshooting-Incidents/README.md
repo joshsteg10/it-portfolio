@@ -91,8 +91,8 @@ Each ticket below was worked through the full support lifecycle: initial complai
 
 **Screenshot:**
 
-![Ticket 1 - Printer thread top](./images/11-ticket-01-printer-full-thread.png)
-![Ticket 1 - Printer thread bottom](./images/11a-ticket-01-printer-full-thread.png)
+![Ticket 1 - Printer thread top](./images/11-ticket01-printer-full-thread.png)
+![Ticket 1 - Printer thread bottom](./images/11a-ticket01-printer-full-thread.png)
 
 ---
 
