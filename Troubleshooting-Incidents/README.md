@@ -1,6 +1,6 @@
 # Troubleshooting Incidents | osTicket Helpdesk on Windows Server 2022
 
-A self-hosted IT helpdesk ticketing system deployed on Windows Server 2022, used to simulate real-world end-user support tickets from submission through resolution. Built to demonstrate the full support workflow — triage, diagnostic reasoning, and resolution documentation — the same process used in real IT support and helpdesk roles.
+A self-hosted IT helpdesk ticketing system deployed on Windows Server 2022, used to simulate real-world end-user support tickets from submission through resolution. It demonstrates the full support workflow: triage, diagnostic reasoning, and resolution documentation, the same process used in real IT support and helpdesk roles.
 
 Focus areas: Ticketing system deployment, IIS/PHP/MySQL configuration, help desk triage workflow, troubleshooting documentation
 
@@ -18,7 +18,7 @@ Focus areas: Ticketing system deployment, IIS/PHP/MySQL configuration, help desk
 
 ## Deployment Summary
 
-osTicket was deployed from scratch on a standalone Windows Server 2022 instance. Setup involved installing and configuring IIS with the CGI role service, installing PHP and connecting it to IIS via a FastCGI handler mapping, installing MySQL and provisioning a dedicated database and user, and finally installing and configuring osTicket itself — including Help Topics, department setup, and folder/file permissions for IIS_IUSRS.
+osTicket was deployed from scratch on a standalone Windows Server 2022 instance. Setup involved installing and configuring IIS with the CGI role service, installing PHP and connecting it to IIS via a FastCGI handler mapping, installing MySQL and provisioning a dedicated database and user, and finally installing and configuring osTicket itself, including Help Topics, department setup, and folder/file permissions for IIS_IUSRS.
 
 Along the way, several real configuration issues came up and were diagnosed and resolved directly, including a FastCGI module registration error caused by a missing CGI role service, an HTTP 500 error traced to a missing PHP extension, and a broken PHP session configuration that was blocking staff and client logins entirely until the session save path and folder permissions were corrected.
 
@@ -44,7 +44,7 @@ Along the way, several real configuration issues came up and were diagnosed and 
 
 ![MySQL service running](./images/05-mysql-service-running.png)
 
-**osTicket database and dedicated user created in MySQL**
+**MySQL command line output confirming the osTicket database, dedicated user, and privileges were created**
 
 ![MySQL database created](./images/06-mysql-database-created.png)
 
@@ -77,7 +77,7 @@ Tickets are categorized using the following Help Topics, configured to route to 
 
 ## Ticket Walkthroughs
 
-Each ticket below was worked through the full support lifecycle: initial complaint, agent triage/clarifying questions, internal diagnostic notes, and resolution — mirroring how a real support ticket would be handled and documented.
+Each ticket below was worked through the full support lifecycle: initial complaint, agent triage/clarifying questions, internal diagnostic notes, and resolution, mirroring how a real support ticket would be handled and documented.
 
 ### Ticket 1: Printer Not Working (Hardware Issue)
 
@@ -104,7 +104,7 @@ Each ticket below was worked through the full support lifecycle: initial complai
 
 **Diagnosis:** Error 809 typically indicates that a required VPN port (UDP 500/4500) is being blocked, commonly by a home router or ISP rather than a server-side issue. Confirmed no changes had been made on the VPN server side.
 
-**Resolution:** Switched the user's VPN client profile from IKEv2 to SSTP, which uses TCP port 443 — a port far less likely to be blocked by home network equipment. User confirmed the connection succeeded afterward.
+**Resolution:** Switched the user's VPN client profile from IKEv2 to SSTP, which uses TCP port 443, a port far less likely to be blocked by home network equipment. User confirmed the connection succeeded afterward.
 
 **Screenshot:**
 
@@ -123,6 +123,6 @@ Each ticket below was worked through the full support lifecycle: initial complai
 ## What I Would Expand Next
 
 - Additional ticket categories (software installation failures, phishing/security reports, account lockouts)
-- SMTP email integration for real ticket notifications (attempted; blocked by a missing PHP OpenSSL extension — root cause identified, to be revisited)
+- SMTP email integration for real ticket notifications (attempted; blocked by a missing PHP OpenSSL extension, root cause identified, to be revisited)
 - Integration with the Active Directory Lab environment for a combined identity + support ticketing simulation
 - SLA policies and ticket escalation rules
