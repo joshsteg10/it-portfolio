@@ -18,9 +18,9 @@ Focus areas: Ticketing system deployment, IIS/PHP/MySQL configuration, help desk
 
 ## Deployment Summary
 
-osTicket was deployed from scratch on a standalone Windows Server 2022 instance. Setup involved installing and configuring IIS with the CGI role service, installing PHP and connecting it to IIS via a FastCGI handler mapping, installing MySQL and provisioning a dedicated database and user, and finally installing and configuring osTicket itself, including Help Topics, department setup, and folder/file permissions for IIS_IUSRS.
+osTicket was deployed from scratch on a standalone Windows Server 2022 instance. Setup involved installing and configuring IIS with the CGI role service, installing PHP and connecting it to IIS via a FastCGI handler mapping, installing MySQL and provisioning a dedicated database and user, and finally installing and configuring osTicket itself, including Help Topics, department setup, folder/file permissions for IIS_IUSRS, and outbound SMTP email integration for ticket notifications.
 
-Along the way, several real configuration issues came up and were diagnosed and resolved directly, including a FastCGI module registration error caused by a missing CGI role service, an HTTP 500 error traced to a missing PHP extension, and a broken PHP session configuration that was blocking staff and client logins entirely until the session save path and folder permissions were corrected.
+Along the way, several real configuration issues came up and were diagnosed and resolved directly, including a FastCGI module registration error caused by a missing CGI role service, an HTTP 500 error traced to a missing PHP extension, a broken PHP session configuration that was blocking staff and client logins entirely until the session save path and folder permissions were corrected, and an outbound SMTP connection failure traced to a missing OpenSSL extension in the PHP build, resolved by enabling the extension and correcting the Gmail SMTP configuration.
 
 ### Setup Screenshots
 
@@ -114,15 +114,14 @@ Each ticket below was worked through the full support lifecycle: initial complai
 ## Skills Demonstrated
 
 - Deployment of a web-based application (osTicket) on Windows Server using IIS, PHP, and MySQL
-- Diagnosing and resolving real IIS/PHP configuration issues (FastCGI registration, missing extensions, session handling)
+- Diagnosing and resolving real IIS/PHP configuration issues (FastCGI registration, missing extensions, session handling, SMTP email delivery)
 - Ticket triage and structured troubleshooting methodology
 - Root cause analysis based on technical symptoms (e.g., printer status codes, VPN error codes)
 - Clear, professional resolution documentation suitable for a real support environment
 - Help desk software configuration (Help Topics, Departments, folder/file permissions)
 
-## What I Would Expand Next
+## Future Enhancements
 
-- Additional ticket categories (software installation failures, phishing/security reports, account lockouts)
-- SMTP email integration for real ticket notifications (attempted; blocked by a missing PHP OpenSSL extension, root cause identified, to be revisited)
-- Integration with the Active Directory Lab environment for a combined identity + support ticketing simulation
+- Additional ticket categories to cover a broader range of support scenarios
 - SLA policies and ticket escalation rules
+- Integration with the Active Directory Lab for a combined identity and support simulation
