@@ -24,18 +24,45 @@ Along the way, several real configuration issues came up and were diagnosed and 
 
 ### Setup Screenshots
 
-| # | Screenshot | Description |
-|---|---|---|
-| 1 | `01-iis-role-installed.png` | IIS Web Server role installed via Server Manager |
-| 2 | `02-iis-localhost-confirmation.png` | Default IIS welcome page confirming the web server is running |
-| 3 | `03-iis-php-handler-mapping.png` | FastCGI handler mapping connecting IIS to PHP |
-| 4 | `04-phpinfo-confirmation.png` | phpinfo() page confirming PHP is installed and running under IIS |
-| 5 | `05-mysql-service-running.png` | MySQL80 service confirmed running |
-| 6 | `06-mysql-database-created.png` | osTicket database and dedicated user created in MySQL |
-| 7 | `07-osticket-folder-permissions.png` | IIS_IUSRS granted Modify permission on the osTicket application folder |
-| 8 | `08-osticket-install-complete.png` | osTicket installation wizard completion screen |
-| 9 | `09-scp-dashboard-first-login.png` | Staff Control Panel dashboard after first login |
-| 10 | `10-help-topics-list.png` | Configured Help Topics used to categorize incoming tickets |
+**IIS Web Server role installed**
+
+![IIS role installed](./images/01-iis-role-installed.png)
+
+**Default IIS welcome page confirming the web server is running**
+
+![IIS localhost confirmation](./images/02-iis-localhost-confirmation.png)
+
+**FastCGI handler mapping connecting IIS to PHP**
+
+![FastCGI handler mapping](./images/03-iis-php-handler-mapping.png)
+
+**phpinfo() page confirming PHP is installed and running under IIS**
+
+![phpinfo confirmation](./images/04-phpinfo-confirmation.png)
+
+**MySQL80 service confirmed running**
+
+![MySQL service running](./images/05-mysql-service-running.png)
+
+**osTicket database and dedicated user created in MySQL**
+
+![MySQL database created](./images/06-mysql-database-created.png)
+
+**IIS_IUSRS granted Modify permission on the osTicket application folder**
+
+![osTicket folder permissions](./images/07-osticket-folder-permissions.png)
+
+**osTicket installation wizard completion screen**
+
+![osTicket install complete](./images/08-osticket-install-complete.png)
+
+**Staff Control Panel dashboard after first login**
+
+![SCP dashboard first login](./images/09-scp-dashboard-first-login.png)
+
+**Configured Help Topics used to categorize incoming tickets**
+
+![Help Topics list](./images/10-help-topics-list.png)
 
 ## Help Topics
 
@@ -62,7 +89,10 @@ Each ticket below was worked through the full support lifecycle: initial complai
 
 **Resolution:** Identified and cleared a stuck job in the print queue, then restarted the Print Spooler service as a precaution. User confirmed a test print completed successfully.
 
-**Screenshot:** `11-ticket-01-printer-full-thread.png` / `11a-ticket-01-printer-full-thread.png`
+**Screenshot:**
+
+![Ticket 1 - Printer thread top](./images/11-ticket-01-printer-full-thread.png)
+![Ticket 1 - Printer thread bottom](./images/11a-ticket-01-printer-full-thread.png)
 
 ---
 
@@ -76,7 +106,10 @@ Each ticket below was worked through the full support lifecycle: initial complai
 
 **Resolution:** Switched the user's VPN client profile from IKEv2 to SSTP, which uses TCP port 443 — a port far less likely to be blocked by home network equipment. User confirmed the connection succeeded afterward.
 
-**Screenshot:** `12-ticket02-vpn-full-thread.png` / `12a-ticket02-vpn-full-thread.png`
+**Screenshot:**
+
+![Ticket 2 - VPN thread top](./images/12-ticket02-vpn-full-thread.png)
+![Ticket 2 - VPN thread bottom](./images/12a-ticket02-vpn-full-thread.png)
 
 ## Skills Demonstrated
 
